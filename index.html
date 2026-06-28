@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📋 Project Workspace</h1>
+    </header>
+
+    <main class="board">
+        <!-- To Do Column -->
+        <div class="column">
+            <h2>To Do</h2>
+            <div class="task-list" id="todo-list">
+                <!-- सैंपल टास्क कार्ड -->
+                <div class="task-card">
+                    <h3>Design Homepage</h3>
+                    <p>Create layout for the dashboard</p>
+                </div>
+            </div>
+            <button class="add-btn" onclick="addNewTask()">+ Add Task</button>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="column">
+            <h2>In Progress</h2>
+            <div class="task-list" id="progress-list">
+                <div class="task-card">
+                    <h3>Setup Repository</h3>
+                    <p>Create files on GitHub</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Done Column -->
+        <div class="column">
+            <h2>Done</h2>
+            <div class="task-list" id="done-list">
+                <div class="task-card">
+                    <h3>Project Planning</h3>
+                    <p>Read task requirements</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
